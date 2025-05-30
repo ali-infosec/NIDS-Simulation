@@ -19,17 +19,18 @@ This project displays the full setup of a custom Network-Based Intrusion Detecti
 
 ### Step 1: Install Suricata
 
+```
 sudo apt update && sudo apt install suricata -y
-
+```
 ---
 
 ### Step 2: Enable & Start Suricata as a Service
 
-'''
+```
 sudo systemctl enable suricata
 sudo systemctl start suricata
 sudo systemctl status suricata
-'''
+```
 
 ![Surciata Starting](docs/screenshots/suricata%20running.png)
 
@@ -41,7 +42,7 @@ Run "ip a" to identify network interface, in this case it was eth0
 ---
 Step 4: Run Suricata
 
-sudo suricata -i eth0 -c /etc/suricata/suricata.yaml -l /var/log/suricata/
+```sudo suricata -i eth0 -c /etc/suricata/suricata.yaml -l /var/log/suricata/```
 
 ![Surciata Runs](docs/screenshots/suricata%20starts%20successfully.png)
 
@@ -59,7 +60,7 @@ sudo suricata -i eth0 -c /etc/suricata/suricata.yaml -l /var/log/suricata/
 
 Reload suricata after rule changes
 
-sudo systemctl restart suricata
+```sudo systemctl restart suricata```
 
 Rules loaded
 
@@ -75,9 +76,10 @@ Rules loaded
 
 ### Step 8: Log Analysis
 
+```
 cat /var/log/suricata/fast.log
 cat /var/log/suricata/eve.json | jq
-
+```
 ---
 
 ### Step 9: Suricata recieving traffic and alerts using custom rules
