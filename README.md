@@ -29,7 +29,7 @@ sudo systemctl enable suricata
 sudo systemctl start suricata
 sudo systemctl status suricata
 
-screenshot showing active fill later
+![Surciata Starting](docs/screenshots/suricata starts successfully.png)
 
 ---
 
@@ -43,10 +43,13 @@ sudo suricata -i eth0 -c /etc/suricata/suricata.yaml -l /var/log/suricata/
 
 screenshot running suricata, fill later
 
+---
 
 ### Step 5: Edit suricata.yaml to process local.rules
 
 screenshot here fill later
+
+---
 
 ### Step 6: Edit /etc/suricata/rules/local.rules to add custom rules
 
@@ -60,20 +63,28 @@ Rules loaded
 
 screenshot of rules loaded
 
+---
+
 ### Step 7: Ran a ping scan against the target host
 
 screenshot of ping scan
+
+---
 
 ### Step 8: Log Analysis
 
 cat /var/log/suricata/fast.log
 cat /var/log/suricata/eve.json | jq
 
+---
+
 ### Step 9: Suricata recieving traffic and alerts using custom rules
 
 /var/log/suricata/eve.json feeding back results from Suricata custom rules
 
 screenshot of icmp echo request detected
+
+---
 
 ### Results
 
