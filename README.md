@@ -29,7 +29,7 @@ sudo systemctl enable suricata
 sudo systemctl start suricata
 sudo systemctl status suricata
 
-![Surciata Starting](docs/screenshots/suricata%20running.png).
+![Surciata Starting](docs/screenshots/suricata%20running.png)
 
 ---
 
@@ -41,19 +41,19 @@ Step 4: Run Suricata
 
 sudo suricata -i eth0 -c /etc/suricata/suricata.yaml -l /var/log/suricata/
 
-![Surciata Runs](docs/screenshots/suricata%20starts%20successfully.png).
+![Surciata Runs](docs/screenshots/suricata%20starts%20successfully.png)
 
 ---
 
 ### Step 5: Edit suricata.yaml to process local.rules
 
-![Edit Suricata.yaml](docs/screenshots/edit%20suricata.yaml%20to%20process%20local.rules.png).
+![Edit Suricata.yaml](docs/screenshots/edit%20suricata.yaml%20to%20process%20local.rules.png)
 
 ---
 
 ### Step 6: Edit /etc/suricata/rules/local.rules to add custom rules
 
-![Edit local.rules](docs/screenshots/suricata%20local%20rules.png).
+![Edit local.rules](docs/screenshots/suricata%20local%20rules.png)
 
 Reload suricata after rule changes
 
@@ -61,13 +61,13 @@ sudo systemctl restart suricata
 
 Rules loaded
 
-![Rules loaded](docs/screenshots/rules%20successfully%20loaded.png).
+![Rules loaded](docs/screenshots/rules%20successfully%20loaded.png)
 
 ---
 
 ### Step 7: Ran a ping scan against the target host
 
-![ping scan](docs/screenshots/ping%20scan.png).
+![ping scan](docs/screenshots/ping%20scan.png)
 
 ---
 
@@ -82,7 +82,7 @@ cat /var/log/suricata/eve.json | jq
 
 /var/log/suricata/eve.json feeding back results from Suricata custom rules
 
-![Echo Request](docs/screenshots/echo%20request%20detected.png).
+![Echo Request](docs/screenshots/echo%20request%20detected.png)
 
 ---
 
