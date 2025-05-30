@@ -41,7 +41,7 @@ Step 4: Run Suricata
 
 sudo suricata -i eth0 -c /etc/suricata/suricata.yaml -l /var/log/suricata/
 
-![Surciata Runs](docs/screenshots/suricata%20starting%20successfully.png).
+![Surciata Runs](docs/screenshots/suricata%20starts%20successfully.png).
 
 ---
 
