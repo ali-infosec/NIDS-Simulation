@@ -25,9 +25,11 @@ sudo apt update && sudo apt install suricata -y
 
 ### Step 2: Enable & Start Suricata as a Service
 
+'''
 sudo systemctl enable suricata
 sudo systemctl start suricata
 sudo systemctl status suricata
+'''
 
 ![Surciata Starting](docs/screenshots/suricata%20running.png)
 
