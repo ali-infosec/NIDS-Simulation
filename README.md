@@ -29,7 +29,7 @@ sudo systemctl enable suricata
 sudo systemctl start suricata
 sudo systemctl status suricata
 
-![Surciata Starting](docs/screenshots/suricata_starts_successfully.png).
+![Surciata Starting](docs/screenshots/suricata%20starts%20successfully.png).
 
 ---
 
