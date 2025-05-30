@@ -47,7 +47,7 @@ sudo suricata -i eth0 -c /etc/suricata/suricata.yaml -l /var/log/suricata/
 
 ### Step 5: Edit suricata.yaml to process local.rules
 
-![Edit Suricata.yaml](docs/screenshots/edit%20suricata.yaml%to%20process%20local.rules.png).
+![Edit Suricata.yaml](docs/screenshots/edit%20suricata.yaml%20to%20process%20local.rules.png).
 
 ---
 
